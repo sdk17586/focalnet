@@ -1,0 +1,36 @@
+--find-links https://download.pytorch.org/whl/torch_stable.html
+Pillow
+torch==1.12.1+cu113
+torchvision
+grad-cam==1.4.3
+torchmetrics==0.7.0
+pytorch_lightning==1.8.6
+timm == 0.3.2
+yacs==0.1.8
+termcolor==1.1.0
+opencv-python==4.4.0.46
+pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.1 -c pytorch
+
+#github참조
+Installation Instructions
+Clone this repo:
+git clone https://github.com/microsoft/FocalNet
+cd FocalNet
+
+Create a conda virtual environment and activate it:
+conda create -n focal python=3.7 -y
+conda activate focal
+
+Install CUDA==10.1 with cudnn7 following the official installation instructions
+Install PyTorch==1.7.1 and torchvision==0.8.2 with CUDA==10.1:
+conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=10.1 -c pytorch
+Install timm==0.3.2:
+pip install timm==0.3.2
+
+Install Apex:
+git clone https://github.com/NVIDIA/apex
+cd apex
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+
+Install other requirements:
+pip install opencv-python==4.4.0.46 termcolor==1.1.0 yacs==0.1.8
