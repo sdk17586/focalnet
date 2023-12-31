@@ -22,7 +22,7 @@ docker run -it \
 ```
 ## container_setting
 ```bat
-git clone https://github.com/sdk17586/focalnet.git /root/focalnet
+git clone https://github.com/sdk17586/focalnet.git 
 
 mkdir -p /root/focalnet/weight
 
