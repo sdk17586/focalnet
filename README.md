@@ -22,14 +22,13 @@ docker run -it \
 ```
 ## container_setting
 ```bat
+docker exec -it dnn_test bash
+
 git clone https://github.com/sdk17586/focalnet.git 
 
 mkdir -p /root/focalnet/weight
 
 ```
-
-
-
 
 ## training
 ```bat
