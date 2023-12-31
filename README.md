@@ -34,3 +34,8 @@ mkdir -p /root/focalnet/weight
 ```bat
 python3 /root/focalnet/bin/train.py
 ```
+
+## predict
+```bat
+python3 /root/focalnet/bin/predict.py
+```
