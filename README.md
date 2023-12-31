@@ -20,4 +20,7 @@ docker run -it \
     -w /root \
     dnn_test:latest
 ```
-
+## Container_setting
+```bat
+docker cp
+```
