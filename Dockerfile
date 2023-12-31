@@ -2,8 +2,14 @@ FROM python:3.8.6
 
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y \
+    libgl1-mesa-glx \
+    git
 
-RUN apt-get update && apt-get install -y libgl1-mesa-glx
+# focalnet GitHub 저장소 복제
+RUN git clone https://github.com/sdk17586/focalnet.git /root/focalnet
+
+RUN mkdir -p /root/focalnet/weight
 
 RUN pip install --find-links https://download.pytorch.org/whl/torch_stable.html \
     Pillow \
@@ -21,5 +27,3 @@ RUN pip install --find-links https://download.pytorch.org/whl/torch_stable.html 
     opencv-python==4.8.0.76
 
 COPY . /app
-
-
