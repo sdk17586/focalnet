@@ -20,6 +20,17 @@ docker run -it \
     -w /root \
     dnn_test:latest
 ```
+## container_setting
+```bat
+git clone https://github.com/sdk17586/focalnet.git /root/focalnet
+
+mkdir -p /root/focalnet/weight
+
+```
+
+
+
+
 ## training
 ```bat
 python3 /root/focalnet/bin/train.py
